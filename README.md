@@ -2,7 +2,7 @@
 MLP (Multi Layer Perceptron) / CNN (Convolutional Neural Network) によるIsing Modelの転移分類
 
 ## Usage
-```[python]
+```[bash]
 python codes/main.py
 ```
 
