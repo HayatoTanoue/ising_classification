@@ -1,0 +1,11 @@
+.virtual_documents
+.vscode
+__pycache__
+.ipynb_checkpoints
+
+
+command/
+data/
+logs/
+
+run.sh
