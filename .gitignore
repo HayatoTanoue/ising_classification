@@ -7,6 +7,5 @@ __pycache__
 command/
 data/
 logs/
-notebooks/DLAP2020_ising_detection.ipynb
 
 run.sh
