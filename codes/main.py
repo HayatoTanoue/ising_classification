@@ -5,13 +5,8 @@ import argparse
 import os
 
 
-def tuple_type(strings):
-    strings = strings.replace("(", "").replace(")", "")
-    mapped_int = map(int, strings.split(","))
-    return tuple(mapped_int)
-
-
 def make_savedir(config):
+    """logディレクトリを作成する"""
     if config.parent_path is None:
         os.makedirs(
             f"../logs/{config.name}/{config.model_name}/{config.batchsize}_{config.adam_lr}",
@@ -39,7 +34,6 @@ if __name__ == "__main__":
     parser.add_argument("--resize", type=int, default=100)
     parser.add_argument("--name", type=str, default="snapshot_2D")
     # model setting
-    parser.add_argument("--classifier", type=str, default="simple")
     parser.add_argument("--model_name", type=str, default="CNN")
     # train params
     parser.add_argument("--adam_lr", type=float, default=0.001)
